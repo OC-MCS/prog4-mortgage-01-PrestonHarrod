@@ -12,6 +12,8 @@ int main()
 	Mortgage userData;
 
 	getData(userData);
+	userData.calcPayment();
+	displayData(userData);
 }
 
 void getData(Mortgage userData)
@@ -47,5 +49,12 @@ void getData(Mortgage userData)
 
 }
 
-void displayData
+void displayData(const Mortgage userData)
+{
+	cout << "Loan amount = $" << userData.getAmount() << endl;
+	cout << "Yearly interest Rate = " << userData.getRate() << "%" << endl;
+	cout << "Loan Term = " << userData.getTerms() << " Years" << endl;
+
+	cout << "Your total is: $" << userData.getmonthlyPayment() << endl;
+}
 
