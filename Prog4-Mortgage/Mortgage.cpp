@@ -25,9 +25,21 @@ bool Mortgage::setRate(double iRate)
 
 bool Mortgage::getTerms(int t)
 {
+	bool flag = false;
 	if (t > 0 && t <= 40)
 	{
 		terms = t;
-
+		flag = true;
 	}
+	return flag;
+}
+
+void Mortgage::getTotal()
+{
+	int theTerms = (getTerms() / 12);
+	double iRate = ((getRate() / 100) / 12);
+
+	monthlyPayment = getAmount() * (pow(iRate + 1, theTerms) *
+					iRate / (pow(iRate + 1, theTerms) - 1)
+
 }
