@@ -1,4 +1,6 @@
 #pragma once
+#ifndef MORTGAGE_PAYMENT_H
+#define MORTGAGE_PAYMENT_H
 // header file for Mortgage class
 class Mortgage {
 	private: 
