@@ -1,6 +1,4 @@
 #pragma once
-#ifndef MORTGAGE_H
-#define MORTGAGE_H
 // header file for Mortgage class
 class Mortgage {
 	private: 
@@ -18,11 +16,23 @@ class Mortgage {
 		void getTotal();
 
 		double getAmount() const
+		{
+			return loanAmount;
+		}
 
 		double getRate() const
+		{
+			return interestRate;
+		}
 
 		int getTerms() const
+		{
+			return terms;
+		}
 
 		double getmonthlyPayment() const
+		{
+			return monthlyPayment;
+		}
 }
 #endif
