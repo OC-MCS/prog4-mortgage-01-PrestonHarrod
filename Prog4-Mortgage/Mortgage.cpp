@@ -1,5 +1,7 @@
 // implementation file for Mortgage class
 #include "Mortgage.h"
+#include <math.h>
+
 
 bool Mortgage::setAmount(double amount)
 {
@@ -23,7 +25,7 @@ bool Mortgage::setRate(double iRate)
 	return flag;
 }
 
-bool Mortgage::getTerms(int t)
+bool Mortgage::setTerms(int t)
 {
 	bool flag = false;
 	if (t > 0 && t <= 40)
@@ -39,7 +41,7 @@ void Mortgage::getTotal()
 	int theTerms = (getTerms() / 12);
 	double iRate = ((getRate() / 100) / 12);
 
-	monthlyPayment = getAmount() * (pow(iRate + 1, theTerms) *
-					iRate / (pow(iRate + 1, theTerms) - 1)
+	monthlyPayment = getAmount() * (pow(iRate + 1, theTerms)) *
+		iRate / (pow(iRate + 1, theTerms) - 1);
 
 }

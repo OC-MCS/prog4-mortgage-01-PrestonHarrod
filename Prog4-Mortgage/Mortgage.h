@@ -10,11 +10,12 @@ class Mortgage {
 		int terms;
 
 	public:
-		Mortgage(): (double loadAmount(0.0), double monthlyPayment(0.0), double interestRate(0.0), int terms(0.0));
+		Mortgage() : loanAmount(0.0), monthlyPayment(0.0), interestRate(0.0), terms(0)
+		{ }
 
 		bool setAmount(double);
 		bool setRate(double);
-		bool getTerms(int);
+		bool setTerms(int);
 		void getTotal();
 
 		double getAmount() const

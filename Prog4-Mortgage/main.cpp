@@ -1,22 +1,19 @@
 #include <iostream>
-#include <string>
 #include "Mortgage.h"
 using namespace std;
-// main goes here. Code that *uses* the Mortgage class
-// goes in this file
 
 void getData(Mortgage &);
-void displayData(const Mortgage)
+void displayData(const Mortgage);
 int main()
 {
 	Mortgage userData;
 
 	getData(userData);
-	userData.calcPayment();
+	userData.getTotal();
 	displayData(userData);
 }
 
-void getData(Mortgage userData)
+void getData(Mortgage &userData)
 {
 	int terms = 0;
 	double iRate = 0.0;
@@ -41,7 +38,7 @@ void getData(Mortgage userData)
 
 	cout << "Please enter the amount of terms in years: " << endl;
 	cin >> terms;
-	while (userData.setTerm(terms) == false)
+	while (userData.setTerms(terms) == false)
 	{
 		cout << "Please enter the number of terms in years: ";
 		cin >> terms;
