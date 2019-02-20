@@ -1,3 +1,8 @@
+/*****************
+Preston Harrod
+Program 4: Mortgage Payment
+Due 2/20/2019
+******************/
 #include <iostream>
 #include "Mortgage.h"
 #include <string>
