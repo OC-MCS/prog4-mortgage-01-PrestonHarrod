@@ -37,5 +37,5 @@ class Mortgage {
 		{
 			return monthlyPayment;
 		}
-}
+};
 #endif

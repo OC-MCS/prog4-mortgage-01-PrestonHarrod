@@ -53,5 +53,5 @@ void displayData(const Mortgage userData)
 	cout << "Loan Term = " << userData.getTerms() << " Years" << endl;
 
 	cout << "Your total is: $" << userData.getmonthlyPayment() << endl;
-}
 
+}

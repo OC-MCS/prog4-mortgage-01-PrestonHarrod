@@ -38,10 +38,10 @@ bool Mortgage::setTerms(int t)
 
 void Mortgage::getTotal()
 {
-	int theTerms = (getTerms() / 12);
-	double iRate = ((getRate() / 100) / 12);
+	int    mTerms = (getTerms() * 12);
+	double iRate = (getRate() / 100) / 12;
 
-	monthlyPayment = getAmount() * (pow(iRate + 1, theTerms)) *
-		iRate / (pow(iRate + 1, theTerms) - 1);
+	monthlyPayment = getAmount() * (pow(iRate + 1, mTerms)) *
+		iRate / (pow(iRate + 1, mTerms) - 1);
 
 }
