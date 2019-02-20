@@ -3,7 +3,7 @@
 #include <math.h>
 
 
-bool Mortgage::setAmount(double amount)
+bool Mortgage::setAmount(float amount)
 {
 	bool flag = false;
 	if (amount > 0)
@@ -14,7 +14,7 @@ bool Mortgage::setAmount(double amount)
 	return flag;
 }
 
-bool Mortgage::setRate(double iRate)
+bool Mortgage::setRate(float iRate)
 {
 	bool flag = false;
 	if (iRate > 0.0 && iRate <= 50)
@@ -25,7 +25,7 @@ bool Mortgage::setRate(double iRate)
 	return flag;
 }
 
-bool Mortgage::setTerms(int t)
+bool Mortgage::setTerms(float t)
 {
 	bool flag = false;
 	if (t > 0 && t <= 40)

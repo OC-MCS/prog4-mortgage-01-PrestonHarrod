@@ -13,9 +13,9 @@ class Mortgage {
 		Mortgage() : loanAmount(0.0), monthlyPayment(0.0), interestRate(0.0), terms(0)
 		{ }
 
-		bool setAmount(double);
-		bool setRate(double);
-		bool setTerms(int);
+		bool setAmount(float);
+		bool setRate(float);
+		bool setTerms(float);
 		void getTotal();
 
 		double getAmount() const
