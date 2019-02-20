@@ -2,7 +2,14 @@
 #include "Mortgage.h"
 #include <math.h>
 
+/******************
+setAmount
 
+Checks if amount entered is a valid float
+
+Params: float
+Returns: bool
+*****************/
 bool Mortgage::setAmount(float amount)
 {
 	bool flag = false;
@@ -14,6 +21,14 @@ bool Mortgage::setAmount(float amount)
 	return flag;
 }
 
+/******************
+setRate
+
+Checks if amount entered is a valid float
+
+Params: float
+Returns: bool
+*****************/
 bool Mortgage::setRate(float iRate)
 {
 	bool flag = false;
@@ -25,6 +40,14 @@ bool Mortgage::setRate(float iRate)
 	return flag;
 }
 
+/******************
+setTerms
+
+Checks if amount entered is a valid float
+
+Params: float
+Returns: bool
+*****************/
 bool Mortgage::setTerms(float t)
 {
 	bool flag = false;
@@ -36,6 +59,14 @@ bool Mortgage::setTerms(float t)
 	return flag;
 }
 
+/******************
+getTotal
+
+Calculates the total amount owed
+
+Params: float
+Returns: bool
+*****************/
 void Mortgage::getTotal()
 {
 	int    mTerms = (getTerms() * 12);

@@ -4,10 +4,10 @@
 // header file for Mortgage class
 class Mortgage {
 	private: 
-		double loanAmount;
-		double monthlyPayment;
-		double interestRate;
-		int terms;
+		double loanAmount; // Hold loan amount
+		double monthlyPayment; // Hold total amount of money owed
+		double interestRate; // Hold interest rate
+		int terms; // Hold number of terms
 
 	public:
 		Mortgage() : loanAmount(0.0), monthlyPayment(0.0), interestRate(0.0), terms(0)

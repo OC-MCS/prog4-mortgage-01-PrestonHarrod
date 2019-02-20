@@ -14,7 +14,14 @@ int main()
 	userData.getTotal();
 	displayData(userData);
 }
+/*********************
+getData
+Asks user for terms, interest Rate and loan amount
+and stores it in the class
 
+Params: userData class
+Returns: None
+**********************/
 void getData(Mortgage &userData)
 {
 	string input;
@@ -68,7 +75,14 @@ void getData(Mortgage &userData)
 	}
 
 }
+/**************************
+displayData
 
+Displays the data entered and total amount owed
+
+Params: userData class
+Returns: None
+**************************/
 void displayData(const Mortgage userData)
 {
 	cout << "Loan amount = $" << userData.getAmount() << endl;
@@ -78,7 +92,14 @@ void displayData(const Mortgage userData)
 	cout << "Your total is: $" << userData.getmonthlyPayment() << endl;
 
 }
+/******************
+parseInt
 
+Handles exception if string is entered instead of an float
+
+Params: string, float
+Returns: bool
+*******************/
 bool parseInt(string sval, float& val)
 {
 	float num = 0.0;
